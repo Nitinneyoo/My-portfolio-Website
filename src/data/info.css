@@ -1,0 +1,59 @@
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info img {
+    margin-top: 100px;
+    border-radius: 100px;
+}
+
+.info h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 90px;
+    font-weight: 500;
+}
+
+.info h1 span {
+    background: linear-gradient(150deg, tomato 0.36%, yellow 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.info p {
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.info-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.info-connect,
+.info-resume {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(150deg, rgb(245, 110, 86) 0.36%, rgb(241, 241, 84) 100%);
+    cursor: pointer;
+
+}
+
+.info-connect:hover {
+    border: 2px solid white;
+}
+
+.info-resume:hover {
+    border: 2px solid white;
+}
