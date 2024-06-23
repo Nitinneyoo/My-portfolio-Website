@@ -14,6 +14,8 @@ const Navbar = () => {
     const toggleTheme = () => {
         setTheme(prevTheme => (prevTheme === "light-theme" ? "dark-theme" : "light-theme"));
     };
+    const [menu, setMenu] = useState("home");
+
 
     const menuRef = useRef();
 
@@ -36,7 +38,6 @@ const Navbar = () => {
                 <li> <AnchorLink className='anchor-link' offset={50} href='#experience'>Experience</AnchorLink></li>
                 {/* <li>Portfolio</li> */}
                 <li><AnchorLink className='anchor-link' offset={50} href='#contact'>Contact</AnchorLink></li>
-                <img src={menu_open} onClick={openMenu} alt='' className='nav-mob-open' />
                 <button className="btn" onClick={toggleTheme}>
                     <div className="toggle">
                         <input type="checkbox" />
@@ -45,6 +46,8 @@ const Navbar = () => {
 
                 </button>
             </ul>
+            <img src={menu_open} onClick={openMenu} alt='' className='nav-mob-open' />
+
         </nav>
     );
 };
