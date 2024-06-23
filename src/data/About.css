@@ -5,16 +5,19 @@
     justify-content: center;
     gap: 80px;
     margin: 80px 170px;
+    color: var(--main-heading);
 }
 
 .about-title {
     position: relative;
+    color: var(--main-heading);
 }
 
 .about-title h1 {
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 500;
+    color: var(--main-heading);
 }
 
 .about-section {
@@ -38,6 +41,7 @@
     gap: 20px;
     font-size: 18px;
     font-weight: 400;
+    color: var(--para-clr);
 }
 
 .about-skills {
@@ -58,6 +62,7 @@
     min-width: 150px;
     font-size: 18px;
     font-weight: 400;
+    color: var(--para-clr);
 }
 
 .about-skill hr {
@@ -73,4 +78,47 @@
 .about-skill:hover {
     transform: scale(1.03);
     transition: 0.3s;
+}
+
+@media(max-width:768px) {
+    .about {
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: start;
+
+    }
+
+    .about-title h1 {
+        font-size: 50px;
+        padding: 0;
+
+    }
+
+    .about-sections {
+        flex-direction: column;
+
+    }
+
+    .about-left {
+        display: none;
+
+    }
+
+    .about-para {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .about-skill {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .about-skill p {
+        font-size: 20px;
+    }
+
+    .about-skill hr {
+        height: 6px;
+    }
 }

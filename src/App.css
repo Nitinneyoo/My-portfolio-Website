@@ -7,11 +7,29 @@
 
 body {
   height: 100vh;
-  background: black;
-  color: white;
+  /* background: black; */
+  background-color: var(--bg-color);
   font-family: 'outfit';
+
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.dark-theme {
+  --main-heading: white;
+  --para-clr: #fff;
+  --bg-color: black;
+  --border-color: white;
+  --arrow-color: white;
+
+}
+
+.light-theme {
+  --main-heading: black;
+  --para-clr: black;
+  --bg-color: white;
+  --border-color: black;
+  --arrow-color: black;
 }

@@ -1,0 +1,138 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 50px 110px;
+}
+
+.experience-title {
+    position: relative;
+}
+
+.experience-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 400;
+    color: var(--main-heading);
+}
+
+
+.experience-formate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px;
+    border-radius: 10px;
+    border: 2px solid;
+    transition: 0.3s;
+    cursor: pointer;
+    border-color: var(--border-color);
+
+}
+
+.experience-container {
+    display: grid;
+    /* grid-template-columns: 3fr; */
+    gap: 40px;
+    margin-bottom: 80px;
+
+}
+
+.experience-formate h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--main-heading);
+}
+
+.experience-formate h2 {
+    font-size: 24px;
+    font-weight: 550;
+    background: linear-gradient(150deg, tomato 0.36%, yellow 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--main-heading);
+}
+
+.experience-formate p {
+    /* color: #9c9b9b; */
+    font-size: 18px;
+    line-height: 40px;
+    max-width: auto;
+    color: var(--para-clr);
+
+}
+
+.experience-readmore {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    color: var(--arrow-color);
+
+}
+
+.experience-formate:hover {
+    border: 2px solid #c386f5;
+    background-image: linear-gradient(150deg, rgb(151, 62, 46), rgb(105, 42, 97));
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.showmore {
+    display: flex;
+    gap: 20px;
+    border: 5px solid;
+    border-color: var(--main-heading);
+    border-radius: 50px;
+    padding: 20px 50px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.showmore p {
+    font-size: 18px;
+    line-height: 40px;
+    max-width: auto;
+    color: var(--para-clr);
+}
+
+.showmore:hover {
+    gap: 30px;
+    transition: 0.4s;
+    background-image: linear-gradient(150deg, rgb(151, 62, 46), rgb(105, 42, 97));
+
+}
+
+@media(max-width:769px) {
+    .experience {
+        gap: 30px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+
+    .experience-title h1 {
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    experience-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .experience-showmore {
+        padding: 20px 40px;
+        font-size: 18px;
+        margin: 50px auto;
+        cursor: pointer;
+
+    }
+}

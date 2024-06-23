@@ -1,0 +1,120 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 50px 110px;
+
+}
+
+.education-title {
+    position: relative;
+    color: var(--para-clr);
+
+}
+
+.education-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 400;
+    color: var(--main-heading);
+}
+
+.education-formate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px;
+    border-radius: 10px;
+    border: 2px solid;
+    transition: 0.3s;
+    cursor: pointer;
+    border-color: var(--border-color);
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.education-formate h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--main-heading);
+}
+
+.education-formate h2 {
+    font-size: 24px;
+    font-weight: 550;
+    background: linear-gradient(150deg, tomato 0.36%, yellow 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--main-heading);
+}
+
+.education-formate p {
+    color: #9c9b9b;
+    font-size: 18px;
+    line-height: 40px;
+    max-width: 300px;
+    color: var(--para-clr);
+
+}
+
+.education-readmore {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.education-formate:hover {
+    border: 2px solid #c386f5;
+    background-image: linear-gradient(150deg, rgb(151, 62, 46), rgb(105, 42, 97));
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+@media(max-width:768px) {
+    .education {
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+
+    .education-title h1 {
+        padding: 0;
+        font-size: 40px;
+
+    }
+
+    .education-formate {
+        gap: 20px;
+        padding: 32px;
+
+    }
+
+    .education-formate h2 {
+        font-size: 28px;
+    }
+
+    .education-formate p {
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+
+    .education-readmore img {
+        width: 20px;
+    }
+
+    .education-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}

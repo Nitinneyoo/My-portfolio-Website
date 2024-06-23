@@ -15,6 +15,7 @@
     width: 70%;
     font-size: 90px;
     font-weight: 500;
+    color: var(--main-heading);
 }
 
 .info h1 span {
@@ -30,6 +31,8 @@
     text-align: center;
     font-size: 18px;
     line-height: 35px;
+    color: var(--para-clr);
+
 }
 
 .info-action {
@@ -47,6 +50,7 @@
     border-radius: 50px;
     background: linear-gradient(150deg, rgb(245, 110, 86) 0.36%, rgb(241, 241, 84) 100%);
     cursor: pointer;
+    color: var(--main-heading);
 
 }
 
