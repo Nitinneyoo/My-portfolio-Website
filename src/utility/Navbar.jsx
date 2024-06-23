@@ -14,7 +14,7 @@ const Navbar = () => {
     const toggleTheme = () => {
         setTheme(prevTheme => (prevTheme === "light-theme" ? "dark-theme" : "light-theme"));
     };
-    const [menu, setMenu] = useState("home");
+    // const [menu, setMenu] = useState("home");
 
 
     const menuRef = useRef();
