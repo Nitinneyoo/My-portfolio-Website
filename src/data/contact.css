@@ -84,11 +84,12 @@
     padding-left: 20px;
     border-radius: 5px;
     /* background: var(--para-clr); */
-    color: var(--para-clr);
+    /* color: var(--para-clr); */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     border: 2px solid;
     border-color: var(--border-color);
+    /* background-color: black; */
 }
 
 .contact-right textarea {
@@ -97,7 +98,7 @@
     padding: 25px;
     border-radius: 4px;
     /* background: var(--para-clr); */
-    color: var(--para-clr);
+    /* color: black; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     border-color: var(--border-color);
@@ -120,6 +121,7 @@
     transform: scale(1.2);
     transition: 0.3s;
 }
+
 
 @media(max-width:768px) {
     .contact {
